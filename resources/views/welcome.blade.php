@@ -27,16 +27,41 @@
                     @auth
                         <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
                     @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Bejelentkezés</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Regisztráció</a>
                         @endif
                     @endauth
                 </div>
             @endif
 
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+            <main>
+                <article>
+                    <fieldset>
+                        <legend>Mit tettél ma a Földért</legend>
+                    <form action="">
+                    <div>
+                    <label for="osztaly">Válassz osztályt:</label>
+                    <select id="osztaly" name="osztaly">
+                        <option value="osztaly_1">1</option>
+                        <option value="osztaly_2">2</option>
+                        <option value="osztaly_3">3</option>
+                    </select>
+                    </div>
+                    <div>
+                    <label for="tevekenyseg">Válassz tevékenységet:</label>
+                    <select id="tevekenyseg" name="tevekenyseg">
+                        <option value="tevekenyseg_id"></option>
+                    </select>
+                    </div>
+                    <button type="submit" value="Küld">
+                    </form>
+                    <fieldset>
+                </article>
+            </main>
+
+            <!-- <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
                     <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
                         <g clip-path="url(#clip0)" fill="#EF3B2D">
@@ -99,9 +124,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
+                <!-- <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
                     <div class="text-center text-sm text-gray-500 sm:text-left">
                         <div class="flex items-center">
                             <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
@@ -110,15 +135,15 @@
 
                             <a href="https://laravel.bigcartel.com" class="ml-1 underline">
                                 Shop
-                            </a>
+                            </a> -->
 
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
+                            <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
                                 <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                             </svg>
 
                             <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
                                 Sponsor
-                            </a>
+                            </a> -->
                         </div>
                     </div>
 

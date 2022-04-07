@@ -22,3 +22,15 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+Route::get('tevekenyseg', function () {
+    return view('pages.tevekenyseg');
+});
+
+Route::get('bejegyzes', function () {
+    return view('pages.bejegyzes');
+});
+
+Route::get('users', function () {
+    return view('pages.users');
+});

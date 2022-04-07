@@ -1,0 +1,8 @@
+class Bejegyzesek{
+    constructor(){
+
+    }
+    setAdat(){
+        
+    }
+}
